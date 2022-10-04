@@ -111,12 +111,9 @@ export default function Home() {
       </Head>
       <div className={styles.main}>
         <div>
-          <h1 className={styles.title}>
-            Welcome! connect your wallet to check if you use ENS
-            {ens ? ens : address}!
-          </h1>
+          <h1 className={styles.title}>Welcome {ens ? ens : address}!</h1>
           <div className={styles.description}>
-            Its an NFT collection for LearnWeb3 Punks.
+            connect your wallet to check if you use ENS.
           </div>
           {renderButton()}
         </div>
